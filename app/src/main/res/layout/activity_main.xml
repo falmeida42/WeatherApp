@@ -36,6 +36,27 @@
                 android:layout_height="wrap_content">
 
             </TextView>
+            <EditText
+                android:id="@+id/editText"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Enter City or Contry Name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:inputType="textPersonName" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn"
+                android:layout_marginBottom="10dp"
+                android:background="#9561a1"
+                android:textColor="@color/white"
+                android:text="GET"
+                app:backgroundTint="@null" />
+
         </LinearLayout>
         <LinearLayout
             android:id="@+id/overviewContainer"
