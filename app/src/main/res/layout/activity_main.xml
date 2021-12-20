@@ -45,7 +45,7 @@
                 android:ems="10"
                 android:hint="Enter City or Contry Name"
                 android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColorHint="#808080"
                 android:inputType="textPersonName" />
             <Button
                 android:layout_width="match_parent"
@@ -76,7 +76,7 @@
             </TextView>
             <TextView
                 android:id="@+id/temp"
-                android:textSize="85sp"
+                android:textSize="80sp"
                 android:fontFamily="sans-serif-thin"
                 android:layout_gravity="center"
                 android:text="24ºC"

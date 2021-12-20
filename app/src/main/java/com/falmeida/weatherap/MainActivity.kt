@@ -75,7 +75,6 @@ class MainActivity : AppCompatActivity () {
                 val windSpeed = wind.getString("speed")
                 val weatherDescription = weather.getString("description")
                 val address = jsonObj.getString("name") + ", " + sys.getString("country")
-
                 findViewById<TextView>(R.id.address).text = address
                 findViewById<TextView>(R.id.updated_at).text = updatedAtText
                 findViewById<TextView>(R.id.status).text = weatherDescription.capitalize()
@@ -91,6 +90,7 @@ class MainActivity : AppCompatActivity () {
                 findViewById<TextView>(R.id.humidity).text = humidity
                 findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
                 findViewById<RelativeLayout>(R.id.mainContainer).visibility = View.VISIBLE
+                findViewById<TextView>(R.id.editText).text = null
             } catch (e: Exception) {
                 findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
                 Toast.makeText(getApplicationContext(), "Something wrong", Toast.LENGTH_LONG)
@@ -98,6 +98,7 @@ class MainActivity : AppCompatActivity () {
                 CITY = BACKUP
                 weatherTask().execute()
             }
+            BACKUP = CITY
         }
     }
 }
