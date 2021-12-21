@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity () {
                 findViewById<TextView>(R.id.editText).text = null
             } catch (e: Exception) {
                 findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
-                Toast.makeText(getApplicationContext(), "Something wrong", Toast.LENGTH_LONG)
+                Toast.makeText(getApplicationContext(), "Something wrong", Toast.LENGTH_SHORT)
                     .show();
                 CITY = BACKUP
                 weatherTask().execute()
